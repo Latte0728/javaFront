@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test10.html</title>
+    <style>
+      .container {
+      display: grid;
+      grid-template-areas: 
+        'header header'
+        'aside  content'
+        'footer footer';
+      grid-template-rows: 150px 1fr 100px;
+      grid-template-columns: 150px 1fr;
+
+      height: 800px;
+    }
+    
+    .item {
+      padding: 50px;
+      color: #fff;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: blue;
+    }
+    .aside {
+      grid-area: aside;
+      background-color: blueviolet;
+    }
+    .content {
+      grid-area: content;
+      background-color: red;
+    }
+    .footer {
+      grid-area: footer;
+      background-color: greenyellow;
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item header">1</div>
+    <div class="item aside">2</div>
+    <div class="item content">3</div>
+    <div class="item footer">4</div>
+  </div>  
+</body>
+</html>

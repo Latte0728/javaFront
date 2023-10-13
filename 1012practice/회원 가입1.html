@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입1</title>
+    <style>
+      legend {
+        color: blue;
+      }
+      label{
+        display:inline-block;
+        width: 150px;
+        border: 1px solid;
+ 
+        /* border-style: 1px solid black; */
+
+      }
+      div{
+        
+        width: 1000px;
+        /* border: 1px solid red; */
+      }
+
+    </style>
+</head>
+<body>
+  <h2>회 원 정 보 입 력</h2>
+  <form>
+    <fieldset>
+     <legend>로그인</legend>
+     
+      <ul>  
+       <label for="id">아이디</label>
+        <input type="text", name="id" , id="id", value="" , autofocus, placeholder="여백 없이 입력하세요", size:20px;>
+       
+         <div for="pw"> 
+          <label>비밀번호</label>
+          <input type="password", name="pw" placeholder="여백 없이 입력하세요">
+          <input type="submit" value="로그인">
+         </div>
+
+      </ul>
+    </fieldset>
+    <fieldset>
+     <legend>가입하기</legend>
+      <ul>
+        <label for="id">아이디 *</label>
+         <input type="text" name="id",>
+      </ul>
+      <ul>
+        <label for="pw">비밀 번호 *</label>  
+         <input type="password" name="pw" >
+      </ul>
+      <ul>
+        <label for="pw_re">비밀 번호 확인 *</label>  
+         <input type="password" name="pw_re">
+      </ul>
+      <ul>
+        <label for="name">이름 *</label>  
+         <input type="name" name="name" >
+      </ul>
+      <ul>
+        <label for="address">메일 주소 *</label>  
+         <input type="text" name="address" >
+      </ul>
+      <ul>
+        <label for="ok">전화번호 *</label>  
+         <input type="phonenumber" name="phonenumber">
+      </ul>  
+    </fieldset>
+    &nbsp;
+    <fieldset>
+      <ul>
+         <input type="submit" value="가입 하기" text-align:center>
+         <input type="submit" value="다시 쓰기" text-align:center>
+      </ul>
+    </fieldset>
+  </form>
+</body>
+</html>

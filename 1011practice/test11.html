@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display 연 습 1</title>
+    <style>
+      .aa1, .aa2, .aa3, .aa4 {
+        background-color: aqua;
+        display: inline;
+      }
+      
+      .aa5, .aa6, .aa7, .aa8 {
+        background-color: #fff;
+        border:1px solid black;
+        width: 500px;
+        
+      }
+      .bb1 {
+        display : solid; /* block 안에서는 lnline이 기본 지정되어있어요. */
+        border: 1px solid rgb(255, 0, 0);
+        width: 100px;
+        padding: 10px;
+      }
+      .bb1:hover {
+        background-color: blueviolet;
+      }
+      .bb2 {
+        display : inline-block;
+        border: 1px solid rgb(0, 255, 0);
+        width: 100px;
+        padding: 10px;
+      }
+      .bb2:hover {
+        background-color: brown;
+      }
+      .bb3 {
+        display : block;
+        border: 1px solid rgb(0, 0, 255);
+        width: 100px;
+        padding: 10px;
+      }
+      .bb3:hover {
+        background-color: black;
+      }
+      .bb4 {
+        display : none;
+        border: 1px solid blue;
+        width: 100px;
+        padding: 10px;
+      }
+      .bb4:hover {
+        background-color: rgb(5, 82, 82);
+      }
+    </style>
+</head>
+<body>
+<hr>
+  <h1>Display 속성</h1>
+  <p style="font-size:20px; color :red">
+    <b>각각의 요소들을 어떻게 보여줄지를 결정.</b>
+  </p>
+  <p style="font-size:20px; color:red">
+    <b>속성처리 : visibility(기본값:보이기) / hidden(감추기) / inherit(부모요소의 값을 상속받아서 사용)</b>
+  </p>
+  <p>none : <span>화면</span>에서 완전히 사라지게 합니다.<br/></p>
+  <hr/>
+  <h3>사용 예시</h3>
+  <div class="aa1">1.안녕하세요</div>
+  <div class="aa2">2.감사해요</div>
+  <div class="aa3">3.잘있어요</div>
+  <div class="aa4">4.다시만나요</div>
+  <hr/>
+  <h2>Inline / inline-block / Block / none &nbsp;속성</h2>
+  <div class="aa5">
+    5.<b><font color="red" class="bb1">안녕하세요(inline)</font></b>
+  </div>
+  <div class="aa6">
+    6.<b><span class="bb2"><font color="green">감사해요(inline-block)</font></span></b>
+  </div>
+  <div class="aa7">
+    7.<b><span class="bb3"><font color="blue">잘있어요(block)</font></span></b>
+  </div>  
+    <div class="aa8">
+    8.<b><span class="bb4"><font color="black">다시만나요(none)</font></span></b>  
+  </div>  
+</body>
+</html>

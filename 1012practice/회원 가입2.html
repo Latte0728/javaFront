@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회 원 가 입2</title>
+</head>
+<body>
+  <h2>여름 방학 특강 신청</h2>
+    <form action="/myform/" method="post">
+         <fieldset> 
+            <legend>수강 신청인</legend>
+            학번<input type="text" name="studendt"><br/>
+            이름<input type="text" name="name"><br/>
+             
+              학과
+              <select>
+                <option>컴퓨터공학과</option>
+                <option>사과</option>
+                <option>생물의약학과</option>
+                <option>생물공학과</option>
+                <option>패션디자인학과</option>
+                <option>신소재공학과</option>
+                <option>실용음악과</option>
+              </select> 
+        </fieldset> 
+        <fieldset>
+            <legend>수강 과목을 선택하세요</legend>
+             선호 색상&nbsp;<input type="color"><br/>
+             신청 과목(회화)&nbsp;<input type="radio">영어 회화(초급)
+                                 <input type="radio">영어 회화(중급)
+                                 <input type="radio">영어 회화(고급)<br/>
+             신청 과목(자격)      <input type="radio">TOEIC
+                                 <input type="radio">TOEFL
+                                 <input type="radio">OPIC<br/>
+             관심 분야            <input type="checkbox">문법
+                                 <input type="checkbox">Vocaburay
+                                 <input type="checkbox">회화
+                                 <input type="checkbox">리스닝
+                                 <input type="checkbox">뉴스 청취
+                                 <input type="checkbox">독해
+        </fieldset>
+        <fieldset>
+            <legend>강의 시간을 선택하세요</legend>
+             개강 주<input type="week"><br/>
+             강의 시간<input type="datetime">
+        </fieldset>
+    </form>
+</body>
+</html>

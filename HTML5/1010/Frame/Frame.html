@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>프레임 연습하기(frameset : html4)</title>
+</head>
+  <frameset rows="180px,*,120">
+    <frame src="html1.html" name="top" noresize>
+      <frameset cols="120px,*,150" frameborder="0">
+        <frame src="html3.html" name="left">
+        <frame src="html4.html" name="right">
+        <frame src="html5.html" name= "center">
+      </frameset>
+      <frame src="html2.html" name="bottom" noresize>
+    <noframes>
+    <p>이 페이지를 보려면 프레임을 지원하는 브라우저가 필요합니다.</p>
+    </noframes>
+  </frameset>
+</html>
