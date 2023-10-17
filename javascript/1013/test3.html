@@ -12,6 +12,7 @@
 
   <script src="test.js"></script>
   <script>
+    // 경고창(메세지 띄우기)
     function msg1() {
       alert("안녕!!!");
     }
@@ -27,12 +28,21 @@
         alert("미성년자 시군요~~~");
       }
       else {
-        age = parseInt(age) + 1;
+        age = parseInt(age)+1;
         alert("통과 입니다.("+age+")");
       }
     }
 
-    
+  // 메시지 창을 통해서 진행 여부 결정하기(confirm())
+  function yncheck2() {
+    yn = confirm("작업을 계속하시겠습니까?")
+    if(yn) {
+      alert("작업을 계속 진행합니다.");
+    }
+    else {
+      alert("작업을 마칩니다.")
+    }
+  }   
   </script>
 
 </head>
@@ -45,6 +55,7 @@
     <button type="button" onclick="msg2()" class="btn btn-primary">메세지2</button>
     <button type="button" onclick="ageCheck()" class="btn btn-warning">나이체크</button>
     <button type="button" onclick="ynCheck()" class="btn btn-secondary">확인체크</button>
+    <button type="button" onclick="ynCheck2()" class="btn btn-secondary">확인체크2</button>
   </form>
 </div>
 </body>

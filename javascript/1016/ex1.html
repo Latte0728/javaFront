@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1.html</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script>
+        'use strict';
+        
+        let result = "";
+        let i = 1;
+        let j = 1;
+
+        
+        // for(i = 1; i<10; i++ ) {
+        //     result = "*" + i + "단" +"*"; 
+        // } 
+        
+
+        for(i = 1; i<10; i++ ) {
+            for(j=1; j<6; j++) {
+                result += "*" + i + "단" + "*" ;
+            } 
+        } 
+        result += '</br>';
+
+        for(i = 1; i<10; i++ ) {
+            for(j=6; j<10; j++) {
+                result += '</br>';
+            } 
+        } 
+        result += '\n';
+//         function mul() {
+//             console.log("a1 : " );
+//             let dan2 = document.myform.mul2.value;
+//             let dan1 = document.myform.mul1.value; // name 
+//             console.log("dan1 : " + dan1 );
+//             console.log("dan2 : " + dan2 );
+//             let start = dan1;
+//             let end = dan2;
+//         // 만약 변수1 > 변수2 
+//      // 시작 = 변수2 , 끝 = 변수 1
+//             if(dan1 >  dan2){
+//                 start = dan2;
+//                 end = dan1;
+//             }
+//             console.log("확인2 : ");
+
+//   //  for(i= 시작; i<=끝; i++) {
+//             for(i=start; i<= end; i++) {
+//                 console.log("A(i) : " + i);
+//                 str = "*"+i+"단"+"*";
+
+//                 for(j=1; j<= 9 ; j++){
+//                     console.log("B(j) : " + j);
+//                     str = i+'*'+j+"="+(i*j);
+//                 }
+
+                // document.write('*'+i+'단'+'*');
+                // document.write(i+'*'+j+"="+(i*j));
+                
+                // result.innerHTML = str;
+            // }
+
+            // if(dan.trim == "") {
+            //     alert("계산할 단을 입력하세요");
+            //     document.myform.dan.focus();
+            //     return;
+            // }
+
+            // let str = "";
+            // str += '* ${dan}단 *<br/>';
+            // for(let i=0; i<=10; i++) {
+            //     str += '${dan} * ${i} = ${dan * 1}'
+            // }
+
+            // demo.innerHTML = str;
+            
+        // }
+        // 변수 1, 2 
+        // 시작 = 변수 1 , 끝 = 변수2
+        // 만약 변수1 > 변수2 
+        // 시작 = 변수2 , 끝 = 변수 1
+        //  for(i= 시작; i<=끝; i++) {
+        // result += "\n";   
+
+        // for(i=0; i<=10; i++) {
+        //     document.write('*'+i+'단'+'*');
+        //     document.write('<br/>'); 
+        //     for(j=1; j<=10; j++)
+        //     document.write(i+"*"+j+"="+(i*j),"<br/>");
+        //     document.write('<br/>')
+        // }
+        //        console.log("확인3 : ");
+
+
+        // for(i=s; i<=e; i++) {
+        //       console.log("확인4 : ");
+        
+    </script>
+            <!-- 구구단을 출력하시오
+            임의의 두개의 숫자를 입력받는다.
+            두 숫자를 작은값에서 큰 값까지의 구구단을 출력하시오. 
+            단, 각 출력 자료는 행 단위로 출력하시오. 각 행에 출력할 열의 개수는 입력받아서 처리하시오.
+            예) 첫번째 수 : 5, 두번째 수 : 1
+   * 1단 *          * 2단 *         * 3단 *
+   1*1=1            2*1=2           3*1=3     
+   1*2=2            2*2=4           3*2=6    
+   1*3=3            2*3=6           3*3=9
+   1*4=4            2*4=8           3*4=12
+   1*5=5            2*5=10          3*5=15
+   1*6=6            2*6=12          3*6=18
+   1*7=7            2*7=14          3*7=21
+   1*8=8            2*8=16          3*8=24
+   1*9=9            2*9=18          3*9=27
+   
+   
+   *4단*            *5단*
+   4*1=4            5*1=5
+   4*2=8            5*2=10
+   4*3=12           5*3=15
+   4*4=16           5*4=20
+   4*5=20           5*5=25
+   4*6=24           5*6=30
+   4*7=28           5*7=35
+   4*8=32           5*8=40
+   4*9=36           5*9=45
+-->
+</head>
+
+<body>
+    <!-- <p><br/></p>
+    <div class="container">
+         폼을 통해서 숫자('구구'단)를 입력 받은 후 해당 '구구단'을 출력하세요.  
+        <h2>구구단 연습</h2>
+        <form name = "myform" >
+
+            <p name="p1">구구단을 입력해주세요.
+                <input type="number" name="mul1" id="mul1" class="form-control"/>
+                <input type="number" name="mul2" id="mul2" class="form-control"/>
+                <input type="number" name="mul1" id="mul1" class="form-control"/>
+                <input type="number" name="mul2" id="mul2" class="form-control"/> -->
+            <!-- </p>
+            <br/>
+            <p name="p2">
+                <input type="button" value="확인" onclick="mul()" class="btn btn-primary" class="form-control"  /> &nbsp;
+                <input type="button" value="취소" onclick="" class="btn btn-danger" class="form-control"  />
+            </p>
+            <hr/>
+            <div id="result" class="text-center w3-blue"></div>
+        </form>
+    </div> -->
+</body>
+<!-- <script>
+    console.log("확인1 : ");
+</script>  -->
+</html>
