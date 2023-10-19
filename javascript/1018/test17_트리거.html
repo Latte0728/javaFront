@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test17.html</title>
+</head>
+<body>
+<p><br/></p>
+<div class="container">
+    <h2>트리거</h2>
+    <form name="myform">
+        <p>
+            <input type="button" value="트리거1" onclick="document.myform.triger2.click()" class="btn-success" />
+            <input type="button" value="트리거1" name="triger2" onclick= "alert('이곳은 트리거 2번입니다.')" class="btn-success" /> // triger 함수 : 남의 것을 제어함
+        </p>
+    </form>
+</div>   
+</body>
+</html>

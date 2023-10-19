@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test3_getter_setter</title>
+    <script>
+        'use strict';
+
+        class Member {
+            // constructor의 ()를 적기 위하여 name, age과 같은 class를 생성
+            // name; 생략가능(매개변수명과 필드명이 같을경우에만 해당)
+            // age;  생략가능(매개변수명과 필드명이 같을경우에만 해당)
+
+            // 생성자
+            constructor(name,age,color) {
+                this.name = name;
+                this.age = age;
+                // this.age = age - 1;
+                this.color = color;
+            }
+
+            // getter 생성 
+            get name() {
+                return this._name;
+            }
+            get age() {
+                //return this._age - 1;
+                return this._age;
+            }
+            get color() {
+                return this._color;
+            }
+        
+            //setter 생성
+            set name(name) {
+                this._name = name;
+            }
+            set age(age) {
+                this._age; 
+            }
+            set color(color) {
+                if(color == '검정' || color =='깜정' || color =='흑색') color = '검정' // 검정, 깜정, 흑색일시 검정(검은색)으로 나타냄. 
+                
+                this._color = color;
+            }
+        }
+
+        let member = new Member('홍길동',35,'빨강');
+        console.log("member : ", member);
+        console.log("name : ", member.name, ", age :", member.age, ", color :", member.color);
+        
+        member.color = "깜정"; // 필드에 값을 주입하면 자동으로 setter를 통해서 필드에 값이 주입되게 된다. 
+        console.log("name : ", member.name, ", age :", member.age, ", color :", member.color);
+    </script>
+</head>
+<body>
+    <h2>getter_setter 연습</h2>    
+</body>
+</html>
