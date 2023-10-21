@@ -16,7 +16,7 @@
     let statusTime;
     
     function plus() {
-      clearInterval(statusTime);
+      clearInterval(statusTime); //clearInterval() 함수는 현재 진행되고 있는 함수의 진행을 멈추는데 쓰입니다.
       num++;
       statusTime = setInterval(plus , 500);
 

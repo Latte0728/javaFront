@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test13_Load.html</title>
+  <title>test14_querySelector.html</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
   <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -18,9 +18,14 @@
     // window.addEventListener('load', function() {
     // 본문(body)의 DOM 을 먼저 로딩시킨후 나머지 세부내용들을 로딩시켜준다.
     window.addEventListener('DOMContentLoaded', function() {
-      let productVar = document.getElementById("product");  // .value / .focus() / .select()
-      let priceVar = document.getElementById("price");
-      let suVar = document.getElementById("su");
+      // let productVar = document.getElementById("product");  // .value / .focus() / .select()
+      // let priceVar = document.getElementById("price");
+      // let suVar = document.getElementById("su");
+
+      // querySelector를 이용한 선택
+      let productVar = document.querySelector("#product");  // .value / .focus() / .select()
+      let priceVar = document.querySelector("#price");
+      let suVar = document.querySelector("#su");
 
       // function calc() {
       calcBtn.addEventListener('click', function() {

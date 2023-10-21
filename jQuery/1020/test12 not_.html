@@ -13,19 +13,11 @@
   <script>
     'use strict';
     
-    $(function() {
-      // $('.container div').css('color', 'gray');
-      // $('.container div .test').css('color', 'orange');
+    $(() => {
+      // not 메소드
+      $('.container div').css('color','lightgray')
+        .not('.yeon').css('color','orange');
 
-      // $('.container div').css('color','gray').filter('.test2').css('color','orange');
-
-      // 결과를 변수에 담아서 ????....
-      let temp = $('.container div').css('color', 'gray');
-      //let mbc = temp.filter('.test2').css('color','orange');
-      //console.log(mbc);
-
-      let mbc = temp.filter('.test2').css({'fontSize':'20pt','color':'orange'});
-      mbc.filter('.kbs').css('backgroundColor','green');
     });
   </script>
 </head>

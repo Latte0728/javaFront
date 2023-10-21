@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형 웹사이트 과제.html</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    .container {
+      width: 1000px;
+      margin: 0 auto;
+      font-size: 20px;
+    }
+    div {
+      background-color: #eee;
+      border: 2px solid gray;
+      font-size: 25px;
+    }
+    div#area {
+      width: 960px;
+      margin: 0 auto;
+      height: 350px;
+      background-color: blueviolet;
+    }
+    #tbl {
+      width: 960px;
+      margin: 0 auto;
+      height: 450px;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      text-align: center;
+    }
+    div#img {
+      text-align: center;
+    }
+
+    div#img img {
+      width: 960px;
+    }
+
+    /* 미디어 쿼리 */
+    /* screen width >= 1024px (max-width < 1024px == max-width:1024px) */
+    @media screen and (max-width:1024px){
+      .container {
+        width: 700px;
+        margin: 0 auto;
+        font-size: 15px;
+      }
+      div {
+        background-color: #eee;
+        border: 2px solid #0ff;
+        font-size: 20px;
+      }
+      div#area {
+        width: 680px;
+        margin: 0 auto;
+        height: 200px;
+        background-color: blueviolet;
+      }
+      #tbl {
+        width: 680px;
+        margin: 0 auto;
+        height: 250px;
+        border-collapse: collapse;
+      }
+
+      div#img img {
+        width: 680px;
+      }
+    }
+    @media screen and (max-width:768px){
+      .container {
+        width: 260px;
+        margin: 0 auto;
+        font-size: 12px;
+      }
+      div {
+        background-color: #eee;
+        border: 2px solid gray;
+        font-size: 14px;
+      }
+      div#area {
+        width: 260px;
+        margin: 0 auto;
+        height: 100px;
+        background-color: blue;
+      }
+      #tbl {
+        width: 260px;
+        margin: 0 auto;
+        height: 150px;
+        border-collapse: collapse;
+      }
+
+      div#img img {
+        width: 260px;
+      }
+    }
+    @media screen and (max-width:768px){
+      .container {
+        width: 260px;
+        margin: 0 auto;
+        font-size: 12px;
+      }
+      div {
+        background-color: #eee;
+        border: 2px solid olivedrab;
+        font-size: 14px;
+      }
+      div#area {
+        width: 260px;
+        margin: 0 auto;
+        height: 100px;
+        background-color: black;
+      }
+      #tbl {
+        width: 260px;
+        margin: 0 auto;
+        height: 150px;
+        border-collapse: collapse;
+      }
+
+      div#img img {
+        width: 260px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <table id="tbl">
+    <tr>
+      <th colspan="5" ><img src="../../images/1.jpg" width="100%" height="200px"/></th>
+    </tr>
+    <tr>
+     
+    </tr>
+  </table>
+  <hr/>
+  <div id="img">
+    <img src="../../images/가을.jpg"/>
+  </div>
+</div>
+</body>
+</html>

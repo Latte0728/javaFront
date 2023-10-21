@@ -38,11 +38,13 @@
 
   function sendMid() {
     opener.document.getElementById("mid").value = document.getElementById("mid").value;
-    opener.document.getElementById("mid").focus();
   }
 
   function winClose() {
-    sendMid();
+    // sendMid();
+    opener.document.getElementById("mid").value = document.getElementById("mid").value;
+    opener.document.getElementById("pwd").focus();
+
     window.close();
   }
 </script>

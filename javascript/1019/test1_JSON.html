@@ -40,6 +40,7 @@
         console.log("birthday : ", member.birthday.getDate);
         console.log("atom() : ", member.atom); 
         console.log("atom() : ", member.atom()); // 함수는 그 안에 들어있는 결과값을 넘겨야 하는데 그냥 내용만 들어있기 때문에(json 안에 있는 함수 자체를 넘기기 때문에) 출력 내용에 atom() undifined 생성 
+        // json은 결과 값만 가져감
         console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
 
@@ -61,7 +62,7 @@
         let obj = JSON.parse(json);
         console.log(obj);
         console.log(obj.birthday);
-        // console.log(obj.birthday.getDate());
+        // console.log(obj.birthday.getDate()); // jason에서 날짜 변환시 결과값이 이상해짐
 
         let obj2 = JSON.parse(json, (key, value)=> {
             // return key, value;
