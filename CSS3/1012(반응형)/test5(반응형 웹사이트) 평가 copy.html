@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test5.html(반응형 웹사이트)</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    .container {
+      width: 1000px;
+      margin: 0 auto;
+      font-size: 20px;
+    }
+    div {
+      background-color: #eee;
+      border: 2px solid gray;
+      font-size: 25px;
+    }
+    div#area {
+      width: 960px;
+      margin: 0 auto;
+      height: 350px;
+      background-color: blueviolet;
+    }
+    #tbl {
+      width: 960px;
+      margin: 0 auto;
+      height: 450px;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      text-align: center;
+    }
+    div#img {
+      text-align: center;
+    }
+
+    div#img img {
+      width: 960px;
+    }
+
+    div#img2 img {
+      width: 960px;
+    }
+    /* 미디어 쿼리 */
+    /* screen width >= 1024px (max-width < 1024px == max-width:1024px) */
+    @media screen and (max-width:1024px){
+      .container {
+        width: 700px;
+        margin: 0 auto;
+        font-size: 15px;
+        display:block;
+      }
+      div {
+        background-color: #eee;
+        border: 2px solid #0ff;
+        font-size: 20px;
+      }
+      div#area {
+        width: 680px;
+        margin: 0 auto;
+        height: 200px;
+        background-color: blueviolet;
+      }
+      #tbl {
+        width: 680px;
+        margin: 0 auto;
+        height: 250px;
+        border-collapse: collapse;
+      }
+
+      div#img img {
+        width: 680px;
+      }
+
+      div#img2 img {
+        width: 680px;
+      }
+    }
+    @media screen and (max-width:768px){
+      .container {
+        width: 260px;
+        margin: 0 auto;
+        font-size: 12px;
+        display: block;
+      }
+      div {
+        background-color: #eee;
+        border: 2px solid aqua;
+        font-size: 14px;
+      }
+      div#area {
+        width: 260px;
+        margin: 0 auto;
+        height: 100px;
+        background-color: blue;
+      }
+      #tbl {
+        width: 260px;
+        margin: 0 auto;
+        height: 150px;
+        border-collapse: collapse;
+      }
+
+      div#img img {
+        width: 260px;
+      }
+    
+      div#img2 img {
+        width: 260px;
+      }
+    }
+    @media screen and (max-width:768px){
+      .container {
+        width: 260px;
+        margin: 0 auto;
+        font-size: 12px;
+        height: auto;
+      }
+      div {
+        background-color: #eee;
+        border: 2px solid olivedrab;
+        font-size: 14px;
+      }
+      div#area {
+        width: 260px;
+        margin: 0 auto;
+        height: 100px;
+        background-color: black;
+      }
+      #tbl {
+        width: 260px;
+        margin: 0 auto;
+        height: 150px;
+        border-collapse: collapse;
+      }
+
+      div#img img {
+        width: 260px;
+      }
+      
+      div#img2 img {
+        width: 260px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2> 오목눈이 사이트</h2>
+  <hr/>
+  <ul>
+    <li>데스크탑 : 1024px 이상</li>
+    <li>태블릿 : 768px ~ 1024px</li>
+    <li>모바일 : 768px 이하</li>
+  </ul>
+  <hr/>
+  <div>오목눈이 이야기</div>
+    <nav>
+      <div class="mainmenu">
+        <a href="https://m.blog.naver.com/wizpet1756/221055655276">  흰 오목눈이 사진 보러 가기</a> &nbsp;
+        <a href="https://smart.science.go.kr/scienceSubject/bird/view.action?menuCd=DOM_000000101001005000&subject_sid=347">  붉은머리 오목눈이 사진 보러 가기</a>
+
+
+      </div>
+    </nav>
+    <ul>
+    </ul>
+  <hr/>
+  <div id="img"></div>
+    <img src="../../images/1.jpg" width="100%" />
+  <hr/>
+  <table id="tbl">
+    <tr>
+      <th>이름</th>
+      <th>특징</th>
+      <th>번식 정보</th>
+      <th>구별하기(동정 포인트)</th>
+    </tr>
+    <tr>
+      <td>흰 오목눈이1</td>
+      <td>박정환</td>
+      <td>그린 402호</td>
+      <td>관련 사진</td>
+    </tr>
+    <tr>
+      <td>붉은 머리 오목눈이</td>
+      <td>동작이 재빠르고 움직일 때 긴 꽁지를 좌우로 흔드는 버릇이 있다.<br/>
+          덤불, 갈대밭, 관목, 잡초가 자라는 지역에서 여러 마리가 무리지어 휘파람 소리를 내며 질서 있게 움직인다.<br/>
+          주로 육지에서 관찰 되며, 멀리 떨어진 도서지역에서는 관찰하기 어렵다.<br/>
+          뻐꾸기가 탁란하는 숙주새로 국내에 찾아오는 뻐꾸기의 대부분이 붉은 머리 오목눈이 둥지에 탁란을 한다.<br/></td>        
+      <td>농촌의 농가 관목, 나무울타리, 풀숲, 관목림 속, 지면으로부터 약 1m 높이에 둥지를 만든다.<br/>
+          마른풀, 섬유, 풀뿌리 등을 이용하여 둥지를 만들며 거미줄로 엮어서 두텁고 튼튼하게 만든다.<br/>
+          4월~7월 사이에 3개~5개의 알을 낳는다.<br/>
+          알은 푸른색 또는 엷은 푸른색의 얼룩무늬가 없으며 타원형이다.<br/>
+          새끼를 기를 때, 새끼에게 주로 곤충류와 소형 거미류를 먹인다.<br/>
+      </td>    
+      <td>야외  관찰시 암수 구분이 힘들다.<br/>
+          몸은 전체적으로 밝은 갈색을 띠며, 정수리와 날개를 접고 있을 때에는 적갈색이다.<br/>
+          꼬리는 체구에 비해 긴 편이고, 부리는 짧고 굵으며, 끝이 약간 아래로 굽어있다.<br/>
+          홍채는 어두운 갈색이며, 다리는 회색을 띈다.<br/>
+      </td>
+      <td>
+        <img src="../../images/3.jpg" width="100%" />
+      </td> 
+      </td>
+      </tr>
+    
+    </table>
+    <table>
+      </tr>
+      <tr>
+      <td>
+    </table>
+      </td>
+      </tr>
+      </tr>
+      <tr>
+      </tr>     
+  </table>
+  <hr/>
+  <div id2="img2">
+    <img src="../../images/2.jpg" width="100%"/>
+  </div>
+</div>
+</body>
+</html>
